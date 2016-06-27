@@ -1,0 +1,32 @@
+#contact-area, .contact-info {margin-top: 35px;}
+#contact-area input, #contact-area textarea {
+	padding: 3px;
+	width: 75%;
+	font-size: 1.4em;
+	margin: 0px 0px 10px 0px;
+	border: 2px solid #ccc;
+	color: #000;
+}
+#contact-area textarea {height: 90px;}
+#contact-area textarea:focus, #contact-area input:focus {border: 2px solid #262163;}
+#contact-area input.submit-button {
+	width: 100px;
+	float: right;
+	margin-left: 100px;
+}
+#contact-area .btn {
+	color: #fff;
+    background-color: #0a37af;
+}
+label {
+	float: left;
+	text-align: right;
+	margin-right: 20px;
+	width: 100px;
+	padding-top: 5px;
+	font-size: 1.4em;
+}
+@media (max-width: 992px) {
+	#contact-area input, #contact-area textarea {width: 100%;}
+	label {text-align: left;}
+}
