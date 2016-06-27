@@ -16,7 +16,7 @@
 			</div>
 			<div class="col-sm-7">
 				<div id="contact-area">
-					<form name="contact-form" id="contact-form" method="post" action="contactengine.php">
+					<form method="post" action="contactengine.php" name="contact-form" id="contact-form" onsubmit="return validateForm()">
 						<label for="Name">Name:</label>
 						<input type="text" name="Name" id="Name"/>
 						<label for="City">Phone:</label>
