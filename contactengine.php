@@ -6,9 +6,9 @@ $ctel = strip_tags($_POST['Tel']);
 $cemail = strip_tags($_POST['Email']);
 $cmessage = strip_tags($_POST['Message']);
 
-$EmailFrom = "DNA@vroooom.com";
-$EmailTo = "mike@vroooom.com";
-$Subject = "Contact Form from DNAHVAC.com";
+$EmailFrom = "no-reply@domain.com";
+$EmailTo = "your-email@domain.com";
+$Subject = "Contact Form from domain.com";
 $Name = Trim(stripslashes($cname));
 $Tel = Trim(stripslashes($ctel));
 $Email = Trim(stripslashes($cemail));
@@ -17,7 +17,7 @@ $Message = Trim(stripslashes($cmessage));
 // validation
 $validationOK = true;
 if (!$validationOK) {
-	print "<meta http-equiv=\"refresh\" content=\"0;URL=error.html\">";
+	print "<meta http-equiv=\"refresh\" content=\"0;URL=error.php\">";
 	exit;
 }
 
@@ -56,6 +56,6 @@ if (isset($cname) && isset($cemail) && isset($cmessage)) {
 if ($success) {
 	print "<meta http-equiv=\"refresh\" content=\"0;URL=contactthanks.php\">";
 } else {
-	print "<meta http-equiv=\"refresh\" content=\"0;URL=error.html\">";
+	print "<meta http-equiv=\"refresh\" content=\"0;URL=error.php\">";
 }
 ?>
