@@ -46,7 +46,6 @@ if (isset($cname) && isset($cemail) && isset($cmessage)) {
 	if ($ret === false) {
 		die('There was an error writing this file');
 	} else {
-
 	}
 } else {
 	die('no post data to process');
