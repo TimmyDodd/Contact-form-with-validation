@@ -26,3 +26,6 @@
 </div>
  --> 
  ?>
+ 
+ // Add this to the footer:
+ // <script src="js/validate.js"></script>
